@@ -1,0 +1,99 @@
+1. locate command
+The locate command can find a file in the database system.
+Moreover, adding the -i argument will turn off case sensitivity, so you can search for a file even if you don’t remember its exact name.
+To look for content that contains two or more words, use an asterisk (*). For example:
+locate -i school*not
+The command will search for files that contain the words school and note, whether they use uppercase or lowercase letters.
+ 
+2. find command
+Use the find command to search for files within a specific directory and perform subsequent operations. Here’s the general syntax:
+find [option] [path] [expression]
+For example, you want to look for a file called notes.txt within the home directory and its subfolders:
+find /home -name notes.txt
+Here are other variations when using find:
+* find -name filename.txt to find files in the current directory.
+* find ./ -type d -name directoryname to look for directories.
+* 
+3. grep command
+Another basic Linux command on the list is grep or global regular expression print. It lets you find a word by searching through all the texts in a specific file.
+Once the grep command finds a match, it prints all lines that contain the specific pattern. This command helps filter through large log files.
+For example, you want to search for the word blue in the notepad.txt file:
+grep blue notepad.txt
+The command’s output will display lines that contain blue.
+
+
+
+4. df command
+Use the df command to report the system’s disk space usage, shown in percentage and kilobyte (KB). Here’s the general syntax:
+df [options] [file]
+For example, enter the following command if you want to see the current directory’s system disk space usage in a human-readable format:
+df -h
+These are some acceptable options to use:
+* df -m displays information on the file system usage in MBs.
+* df -k displays file system usage in KBs.
+* df -T shows the file system type in a new column.
+* 
+5. du command
+If you want to check how much space a file or a directory takes up, use the du command. You can run this command to identify which part of the system uses the storage excessively.
+Remember, you must specify the directory path when using the du command. For example, to check /home/user/Documents enter:
+du /home/user/Documents
+Adding a flag to the du command will modify the operation, such as:
+* -s offers the total size of a specified folder.
+* -m provides folder and file information in MB
+* k displays information in KB.
+* -h informs the last modification date of the displayed folders and files.
+* 
+6. head command
+The head command allows you to view the first ten lines of a text. Adding an option lets you change the number of lines shown. The head command is also used to output piped data to the CLI.
+Here’s the general syntax:
+head [option] [file]
+For instance, you want to view the first ten lines of note.txt, located in the current directory:
+head note.txt
+Below are some options you can add:
+* -n or –lines prints the first customized number of lines. For example, enter head -n 5 filename.txt to show the first five lines of filename.txt.
+* -c or –bytes prints the first customized number of bytes of each file.
+* -q or –quiet will not print headers specifying the file name.
+* 
+7. tail command
+The tail command displays the last ten lines of a file. It allows users to check whether a file has new data or to read error messages.
+Here’s the general format:
+tail [option] [file]
+For example, you want to show the last ten lines of the colors.txt file:
+tail -n colors.txt
+
+8. diff command
+Short for difference, the diff command compares two contents of a file line by line. After analyzing them, it will display the parts that do not match.
+Programmers often use the diff command to alter a program instead of rewriting the entire source code.
+Here’s the general format:
+diff [option] file1 file2
+For example, you want to compare two text files – note.txt and note_update.txt:
+diff note.txt note_update.txt
+Here are some acceptable options to add:
+* -c displays the difference between two files in a context form.
+* -u displays the output without redundant information.
+* -i makes the diff command case insensitive.
+* 
+9. tar command
+The tar command archives multiple files into a TAR file – a common Linux format similar to ZIP, with optional compression.
+Here’s the basic syntax:
+tar [options] [archive_file] [file or directory to be archived]
+For instance, you want to create a new TAR archive named newarchive.tar in the /home/user/Documents directory:
+tar -cvf newarchive.tar /home/user/Documents
+The tar command accepts many options, such as:
+* -x extracts a file.
+* -t lists the content of a file.
+* -u archives and adds to an existing archive file.
+* 
+Check out the more practical examples to know more about the other functions.
+10. chmod command
+chmod is a common command that modifies a file or directory’s read, write, and execute permissions. In Linux, each file is associated with three user classes – owner, group member, and others.
+Here’s the basic syntax:
+chmod [option] [permission] [file_name]
+For example, the owner is currently the only one with full permissions to change note.txt. To allow group members and others to read, write, and execute the file, change it to the -rwxrwxrwx permission type, whose numeric value is 777:
+chmod 777 note.txt
+This command supports many options, including:
+* -c or –changes displays information when a change is made.
+* -f or –silent suppresses the error messages.
+* -v or –verbose displays a diagnostic for each processed file.
+* 
+
