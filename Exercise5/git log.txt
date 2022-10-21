@@ -1,0 +1,37 @@
+$ git log
+commit b4f904e992bdcc3b6986d68390c048e00cff9150 (HEAD -> main, origin/main, origin/HEAD)
+Author: Afolabi Hezekiah <afolabihezekiahabiola@gmail.com>
+Date:   Fri Oct 21 20:54:54 2022 +0100
+
+    My fourth upload
+
+commit 7c6cba56ae44f9626c4916136d098e7181a129cc
+Author: Afolabi Hezekiah <afolabihezekiahabiola@gmail.com>
+Date:   Fri Oct 21 20:32:02 2022 +0100
+
+    My third upload
+
+commit 803607e2f2c8bbc0a4ae22979b324677d4e00b27
+Author: Afolabi Hezekiah <afolabihezekiahabiola@gmail.com>
+Date:   Sat Oct 15 21:19:58 2022 +0100
+
+    My second upload
+
+commit 56d9260a52cb090c1874fc91e7c08f941ebe899c
+Author: Afolabi Hezekiah <afolabihezekiahabiola@gmail.com>
+Date:   Sat Oct 15 21:14:39 2022 +0100
+
+    My second upload
+
+commit 5dad3d35f5d091ccb67b62f7c3a76de7fc503705
+Author: Afolabi Hezekiah <afolabihezekiahabiola@gmail.com>
+Date:   Sat Oct 15 19:47:25 2022 +0100
+
+    my first upload
+
+commit a6fc15ce609b4f1b2a306a10244745f8893fb6ec
+Author: AFOLABI HEZEKIAH <104587787+AFOLABIHEZEKIAH@users.noreply.github.com>
+Date:   Sat Oct 15 00:40:47 2022 -0700
+
+    Initial commit
+
