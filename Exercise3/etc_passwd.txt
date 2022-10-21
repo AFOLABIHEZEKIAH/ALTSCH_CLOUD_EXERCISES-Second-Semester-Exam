@@ -1,0 +1,3 @@
+Hezekiah:x:1003:1004::/home/Hezekiah:/usr/bin/bash
+John:x:1004:116::/home/John:/usr/bin/bash
+Jane:x:1005:1005::/home/Jane:/usr/bin/bash

@@ -1,0 +1,15 @@
+Your public key has been saved in /home/John/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:C8NczDYLO4YvwbXzkjtYecSP6nzBVKyiEwjE3K8o/qA John@ubuntu-focal
+The key's randomart image is:
++---[RSA 3072]----+
+|+..      .       |
+|.o .   o  o      |
+| . .. o.*o       |
+|  ...*.*=o       |
+|  . =o@*So       |
+|.. .o+oB=..      |
+|o.  .++oo.       |
+|... .ooo.        |
+|E .. .+o         |
++----[SHA256]-----+
