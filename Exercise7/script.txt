@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#Email Recipient
+EMAIL="afolabihezekiahabiola@gmail.com"
+
+#Extract date and time
+SENDTIME=$(date +%H%m)
+
+#RAM Usage log file
+FILE=$HOME/ram.log
+
+if test -f &FILE;
+then
+rm -rf $FILE
+else
+ touch $FILE
+date >> $FILE
+free -h >> $FILE
+echo "---" >> $FILE
+fi
+if [[ $SENDTIME == 0000]];
+then
+
+echo "Hello Hezekiah, please see the RAM useage for today below" |mail -s "RAM Useage" -A $FILE $EMAIL
+fi
